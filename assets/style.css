@@ -210,3 +210,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--green); outline
 .cta-band .cta-q { color: #fff; font-size: 1.15rem; font-weight: 700; margin: 0 0 8px; }
 .cta-band .cta-a { color: #c9d4e5; margin: 0; }
 .cta-band a { color: var(--green); font-weight: 700; }
+
+/* ── 케이스 분석 그래픽 요소 ── */
+.fact-box { background: var(--bg-soft); border-left: 4px solid var(--green); padding: 6px 18px 10px; border-radius: 8px; margin: 18px 0; }
+.fact-box h3 { margin: 10px 0 6px; font-size: 1rem; }
+.timeline { list-style: none; padding-left: 0; margin: 14px 0 14px 6px; border-left: 3px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 14px 18px; }
+.timeline li::before { content: ''; position: absolute; left: -7.5px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--green-dark); }
+.timeline .t-year { font-weight: 800; color: var(--navy); margin-right: 6px; }
+.meter { margin: 18px 0; }
+.meter .meter-label { display: flex; justify-content: space-between; gap: 12px; font-size: 0.9rem; color: var(--muted); margin-bottom: 5px; }
+.meter .meter-value { font-weight: 800; color: var(--text); }
+.meter .meter-track { background: #e6e9ef; border-radius: 7px; height: 14px; overflow: hidden; }
+.meter .meter-fill { background: var(--green-dark); height: 100%; border-radius: 7px 0 0 7px; min-width: 4px; }
+.meter .meter-note { font-size: 0.85rem; color: var(--muted); margin-top: 5px; }
