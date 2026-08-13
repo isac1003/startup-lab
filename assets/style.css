@@ -40,7 +40,7 @@ a:hover { text-decoration: underline; }
 
 /* ── 히어로 (홈 상단) ── */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #1d3a6b 60%, #234a86 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #17494f 60%, #1c5a5e 100%);
   color: #fff;
   padding: 48px 0 40px;
   margin: -40px -20px 36px;
@@ -199,14 +199,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--green); outline
 .audience { display: grid; gap: 10px; margin: 18px 0 10px; }
 .aud-banner { display: block; padding: 13px 18px; border-radius: 8px; background: var(--navy); color: #dbe4f2; font-size: 0.95rem; transition: background .15s; }
 .aud-banner strong { color: var(--green); margin-right: 6px; }
-.aud-banner:hover { background: #1d3a6b; text-decoration: none; color: #fff; }
+.aud-banner:hover { background: #17494f; text-decoration: none; color: #fff; }
 
 /* ── 헤더 문의 버튼 ── */
 .site-header nav a.nav-cta { background: var(--green); color: var(--navy); font-weight: 700; padding: 4px 14px; border-radius: 20px; border-bottom: none; }
 .site-header nav a.nav-cta:hover { background: #fff; color: var(--navy); }
 
 /* ── 하단 CTA 밴드 ── */
-.cta-band { background: linear-gradient(135deg, var(--navy) 0%, #1d3a6b 100%); padding: 30px 0; margin-top: 48px; text-align: center; }
+.cta-band { background: linear-gradient(135deg, var(--navy) 0%, #17494f 100%); padding: 30px 0; margin-top: 48px; text-align: center; }
 .cta-band .cta-q { color: #fff; font-size: 1.15rem; font-weight: 700; margin: 0 0 8px; }
 .cta-band .cta-a { color: #c9d4e5; margin: 0; }
 .cta-band a { color: var(--green); font-weight: 700; }
