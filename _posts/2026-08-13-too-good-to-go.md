@@ -1,15 +1,15 @@
 ---
 layout: idea
-title: "Too Good To Go — 마감 앞둔 음식을 '서프라이즈 백'으로 반값에 (덴마크)"
+title: "Too Good To Go, 마감 앞둔 음식을 '서프라이즈 백'으로 반값에 (덴마크)"
 categories: ideas
 country: 덴마크
 sector: 푸드테크
 oneliner: "폐기 직전 음식을 앱으로 연결해 2025년 한 해 1억 5,700만 끼를 구출한 세계 최대 잉여음식 플랫폼"
 website: "https://www.toogoodtogo.com"
 sources:
-  - title: "Too Good To Go saved 157 million meals in 2025 — RetailDetail"
+  - title: "Too Good To Go saved 157 million meals in 2025 (RetailDetail)"
     url: "https://www.retaildetail.eu/news/food/too-good-to-go-will-save-157-million-meals-by-2025/"
-  - title: "Too Good To Go — About Us"
+  - title: "Too Good To Go 공식 소개 (About Us)"
     url: "https://www.toogoodtogo.com/en-us/about-us"
 ---
 
@@ -19,7 +19,7 @@ sources:
 해에만 1억 5,700만 끼 분량의 음식을 폐기 위기에서 구출했다.
 
 **모델의 핵심.** 매장 입장에서는 어차피 버릴 재고가 현금이 되고, 소비자는 반값
-이하로 먹거리를 얻는다 — 앞서 심층분석한 Misfits Market과 같은 "폐기 직전
+이하로 먹거리를 얻는다. 앞서 심층분석한 Misfits Market과 같은 "폐기 직전
 가치의 재발견" 계열이지만, 재고를 직접 매입·배송하지 않고 **중개만 하는 초경량
 모델**이라는 점이 다르다. 물류가 없으니 도시 단위로 빠르게 복제된다.
 

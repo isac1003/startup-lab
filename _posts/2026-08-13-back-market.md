@@ -1,15 +1,15 @@
 ---
 layout: idea
-title: "Back Market — 리퍼브 전자기기만 파는 마켓플레이스 (프랑스)"
+title: "Back Market, 리퍼브 전자기기만 파는 마켓플레이스 (프랑스)"
 categories: ideas
 country: 프랑스
 sector: 리커머스
 oneliner: "중고가 아니라 '검증된 리퍼브'라는 새 카테고리를 만들어 2025년 거래액 32% 성장"
 website: "https://www.backmarket.com"
 sources:
-  - title: "Back Market's GMV increased 32% in 2025 — Ecommerce News"
+  - title: "Back Market's GMV increased 32% in 2025 (Ecommerce News)"
     url: "https://ecommercenews.eu/back-markets-gmv-increased-32-in-2025/"
-  - title: "Back Market Enters New Phase of Growth — 공식 보도자료"
+  - title: "Back Market Enters New Phase of Growth (공식 보도자료)"
     url: "https://www.backmarket.com/en-us/c/press-release/2025-business-growth"
 ---
 
@@ -24,8 +24,8 @@ sources:
 
 **한국이라면.** 국내 중고폰 시장은 통신사·제조사 보상판매와 개인 간 거래로
 양분되어 있고, "등급·보증 기반 리퍼브 전문 마켓"의 자리는 상대적으로 비어 있다.
-다만 갤럭시 중심의 국내 시장 구조와 제조사 인증 리퍼브의 확장 가능성이 변수 —
-가전·태블릿 등 폰 바깥 품목에서 먼저 검증하는 접근을 생각해볼 수 있다.
+다만 갤럭시 중심의 국내 시장 구조, 그리고 제조사 인증 리퍼브의 확장 가능성이 변수다.
+가전과 태블릿처럼 폰 바깥 품목에서 먼저 검증하는 접근을 생각해볼 수 있다.
 
 *이 모델의 시장규모·경쟁·국내 적용 판정까지 본 심층 분석이 필요하신가요?
 [문의하기](https://maxconsulting.or.kr/contact/)로 요청해 주세요.*

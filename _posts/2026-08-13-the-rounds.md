@@ -1,13 +1,13 @@
 ---
 layout: idea
-title: "The Rounds — 생필품을 '재사용 용기'로 정기 배송하는 동네 물류 (미국)"
+title: "The Rounds, 생필품을 '재사용 용기'로 정기 배송하는 동네 물류 (미국)"
 categories: ideas
 country: 미국
 sector: 물류·구독
-oneliner: "일회용 포장 없는 생필품 리필 구독 — Misfits Market이 2025년 인수한 지속가능 물류 모델"
+oneliner: "일회용 포장 없는 생필품 리필 구독. Misfits Market이 2025년 인수한 지속가능 물류 모델"
 website: "https://www.therounds.co"
 sources:
-  - title: "Misfits Market — Wikipedia (The Rounds 인수)"
+  - title: "Misfits Market (Wikipedia, The Rounds 인수)"
     url: "https://en.wikipedia.org/wiki/Misfits_Market"
 ---
 
@@ -23,8 +23,8 @@ Market에 인수됐다.
 
 **한국이라면.** 아파트 밀집 주거라는 한국의 조건은 이 모델의 최대 변수인 배송
 밀도에 오히려 유리하다. 단지 단위 공동구매·리필 스테이션과 결합하면 배송비
-구조가 미국보다 좋아질 수 있다. 관건은 용기 회수·세척의 위생 기준과 운영비 —
-지자체 자원순환 지원사업과 연계하면 초기 비용을 낮출 여지가 있다.
+구조가 미국보다 좋아질 수 있다. 관건은 용기 회수·세척의 위생 기준, 그리고 운영비다.
+지자체 자원순환 지원사업과 연계하면 초기 비용을 낮출 수 있다.
 
 *이 모델의 시장규모·경쟁·국내 적용 판정까지 본 심층 분석이 필요하신가요?
 [문의하기](https://maxconsulting.or.kr/contact/)로 요청해 주세요.*
