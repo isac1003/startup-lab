@@ -224,3 +224,5 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--green); outline
 .meter .meter-track { background: #e6e9ef; border-radius: 7px; height: 14px; overflow: hidden; }
 .meter .meter-fill { background: var(--green-dark); height: 100%; border-radius: 7px 0 0 7px; min-width: 4px; }
 .meter .meter-note { font-size: 0.85rem; color: var(--muted); margin-top: 5px; }
+.idea-item { flex: 1; display: flex; flex-direction: column; }
+.idea-item .idea-sub { color: var(--muted); font-size: 0.87rem; font-weight: 400; margin-top: 2px; }

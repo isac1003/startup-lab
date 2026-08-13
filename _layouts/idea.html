@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="post">
+  <header>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time>
+      · 아이디어 노트{% if page.country %} · {{ page.country }}{% endif %}{% if page.sector %} · {{ page.sector }}{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.website %}<p class="brief-meta"><span class="badge badge-guide">짧은 소개</span> <a href="{{ page.website }}" target="_blank" rel="noopener nofollow">공식 사이트 →</a></p>{% endif %}
+  </header>
+  {{ content }}
+  {% if page.sources %}
+  <section class="sources">
+    <h2>참고 자료</h2>
+    <ul>
+    {% for s in page.sources %}
+      <li><a href="{{ s.url }}" target="_blank" rel="nofollow noopener">{{ s.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  <p class="ai-disclosure">아이디어 노트는 해외 창업 모델을 짧게 소개하는 코너입니다. AI가 공개 자료를 종합해 작성했으며, 세부 검증 전의 소개 글임을 감안해 주세요. 작성일: {{ page.date | date: "%Y-%m-%d" }}</p>
+
+  {% assign catposts = site.categories.ideas %}
+  {% assign idx = -1 %}
+  {% for p in catposts %}{% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+  {% assign newer_i = idx | minus: 1 %}
+  {% assign older_i = idx | plus: 1 %}
+  <nav class="post-nav">
+    <div class="post-nav-row">
+      {% if newer_i >= 0 %}{% assign newer = catposts[newer_i] %}<a class="nav-prev" href="{{ newer.url | relative_url }}">← 다음 노트</a>{% else %}<span></span>{% endif %}
+      {% if older_i < catposts.size %}{% assign older = catposts[older_i] %}<a class="nav-next" href="{{ older.url | relative_url }}">이전 노트 →</a>{% else %}<span></span>{% endif %}
+    </div>
+    <p class="nav-list"><a href="{{ '/ideas/' | relative_url }}">☰ 아이디어 노트 전체 보기</a> · <a href="{{ '/cases/' | relative_url }}">심층 케이스 분석</a> · <a href="{{ '/' | relative_url }}">홈으로</a></p>
+  </nav>
+</article>

@@ -39,6 +39,18 @@ layout: default
 </section>
 
 <section>
+  <h2>아이디어 노트 — 짧게 보는 세계의 창업</h2>
+  <p class="section-desc">깊은 분석 전에, 일단 아이디어부터. 세계의 흥미로운 창업을 짧게 소개합니다.</p>
+  <ul class="archive-list">
+  {% assign lit = site.categories.ideas | slice: 0, 5 %}
+  {% for post in lit %}
+    <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time><div class="idea-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.oneliner %}<span class="idea-sub">{{ post.oneliner }}</span>{% endif %}</div></li>
+  {% endfor %}
+  </ul>
+  <p><a class="more-link" href="{{ '/ideas/' | relative_url }}">아이디어 노트 전체 보기 →</a></p>
+</section>
+
+<section>
   <h2>무엇이 다른가요?</h2>
   <div class="services">
     <a class="service" href="{{ '/method/' | relative_url }}"><h3>소개가 아니라 검증</h3><p>"이런 창업이 있다"에서 멈추지 않고, 시장이 실재하는지·이길 수 있는지·할 가치가 있는지를 관문(Gate) 방식으로 판정합니다</p></a>
