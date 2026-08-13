@@ -1,0 +1,32 @@
+title: MAX 스타트업랩
+tagline: 해외 창업 아이디어 심층분석
+description: >-
+  MAX 스타트업랩은 맥스컨설팅(주)이 운영하는 창업자 정보 사이트입니다. 매주 해외의
+  새로운 아이디어 창업을 발굴해 시장규모, 경쟁구도, 비즈니스모델, 기회와 위협을
+  케이스별로 심층 분석하고, 한국에서 창업한다면 어떤 모습일지 검증된 평가 방법론으로
+  진단합니다.
+url: "https://startup.maxconsulting.or.kr"
+lang: ko
+timezone: Asia/Seoul
+
+# 회사 정보 (사이트 전체에서 사용)
+company:
+  name_ko: 맥스컨설팅(주)
+  name_en: Max Consulting Co., Ltd.
+  founded: 1982
+  founded_date: 1982-04-01
+  ceo: 조윤재
+  address: 경기도 안양시 동안구 시민대로 361, 에이스평촌타워 506호
+  tel: 02-3474-0906
+  fax: 02-3473-0109
+  email: consult@maxconsulting.or.kr
+  main_site: https://maxconsulting.or.kr
+
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  posts_limit: 20

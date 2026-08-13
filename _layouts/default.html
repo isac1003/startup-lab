@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description | strip_newlines | truncate: 155 }}{% endif %}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/favicon-512.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+{% if page.url == "/" or page.url == "/method/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description | strip_newlines }}",
+  "inLanguage": "ko",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.company.name_ko }}",
+    "alternateName": "{{ site.company.name_en }}",
+    "url": "{{ site.company.main_site }}",
+    "logo": "{{ '/assets/logo.png' | absolute_url }}",
+    "email": "{{ site.company.email }}",
+    "telephone": "+82-2-3474-0906"
+  }
+}
+</script>
+{% endif %}
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ '/' | relative_url }}"><img class="site-logo" src="{{ '/assets/logo-mark-white.png' | relative_url }}" alt="" width="32" height="36">{{ site.title }}</a>
+    <nav aria-label="주 메뉴">
+      <a href="{{ '/cases/' | relative_url }}">케이스 분석</a>
+      <a href="{{ '/method/' | relative_url }}">분석 방법론</a>
+      <a href="{{ site.company.main_site }}/startup/">창업 지원받기</a>
+      <a href="{{ site.company.main_site }}">맥스컨설팅</a>
+      <a class="nav-cta" href="{{ site.company.main_site }}/contact/">문의하기</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+{{ content }}
+</main>
+<div class="cta-band"><div class="wrap">
+  <p class="cta-q">이런 창업, 한국에서 해보고 싶으신가요?</p>
+  <p class="cta-a">등록 액셀러레이터 맥스컨설팅이 BM 진단부터 투자유치까지 함께합니다 · <a href="{{ site.company.main_site }}/startup/">스타트업 서비스 보기 →</a> · <a href="{{ site.company.main_site }}/contact/">문의하기</a></p>
+</div></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>{{ site.title }}</strong> — {{ site.company.name_ko }}({{ site.company.name_en }})이 운영하는 창업자 정보 사이트</p>
+    <p>{{ site.company.address }} · Tel {{ site.company.tel }} · <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
+    <p><a href="{{ '/cases/' | relative_url }}">케이스 분석</a> · <a href="{{ '/method/' | relative_url }}">분석 방법론</a> · <a href="{{ site.company.main_site }}">맥스컨설팅 홈페이지</a> · <a href="{{ site.company.main_site }}/briefing/">지원사업 브리핑</a></p>
+    <p class="ai-notice">본 사이트의 케이스 분석은 AI가 공개 자료를 종합·분석하여 작성하며, 원 출처를 각 글에 표기합니다. 투자·창업의 최종 판단 책임은 독자에게 있습니다.</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('main table').forEach(function(t){
+  var w = document.createElement('div'); w.className = 'table-wrap';
+  t.parentNode.insertBefore(w, t); w.appendChild(t);
+});
+document.querySelectorAll('a[href^="http"]').forEach(function(a){
+  if (a.hostname !== location.hostname) { a.target = "_blank"; a.rel = "noopener"; }
+});
+</script>
+</body>
+</html>

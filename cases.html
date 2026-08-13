@@ -1,0 +1,20 @@
+---
+layout: default
+title: 케이스 분석
+description: 해외 아이디어 창업 케이스 심층 분석 아카이브 — 시장규모, 경쟁구도, 비즈니스모델, 기회·위협, 한국 적용 판정.
+permalink: /cases/
+---
+<h1>케이스 분석</h1>
+<p class="section-desc">매주 발굴하는 해외 창업 케이스의 심층 분석입니다. 항목을 클릭하시면 세부내용을 보실 수 있습니다.</p>
+{% assign prev_month = "" %}
+{% for post in site.categories.cases %}
+  {% assign this_month = post.date | date: "%Y년 %m월" %}
+  {% if this_month != prev_month %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 class="archive-month">{{ this_month }}</h2>
+    <ul class="archive-list">
+    {% assign prev_month = this_month %}
+  {% endif %}
+  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m.%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="hero">
+  <div class="wrap">
+    <h1>세계의 새로운 창업 아이디어를,<br>한국의 기회로 읽어드립니다</h1>
+    <p class="motto">Global Ideas, Korean Opportunities</p>
+    <p>MAX 스타트업랩은 매주 해외에서 등장한 새로운 아이디어 창업을 발굴해
+    <strong style="color:#fff">시장규모 · 경쟁구도 · 비즈니스모델 · 기회와 위협</strong>을 케이스별로
+    심층 분석하고, "한국에서 창업한다면 어떨까"를 검증된 평가 방법론으로 진단합니다.
+    40년 컨설팅 경험과 1,600개사 창업지원 데이터를 가진 맥스컨설팅이 운영합니다.</p>
+    <div class="stats">
+      <div class="stat"><span class="num">매주 3건+</span><span class="label">해외 창업 케이스 심층분석</span></div>
+      <div class="stat"><span class="num">5단계</span><span class="label">게이트 검증 방법론</span></div>
+      <div class="stat"><span class="num">1,600개사+</span><span class="label">운영사 맥스컨설팅 누적 지원기업</span></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>최신 케이스 분석</h2>
+  <p class="section-desc">항목을 클릭하시면 심층 분석 전문을 보실 수 있습니다.</p>
+  <ul class="archive-list">
+  {% assign latest = site.categories.cases | slice: 0, 10 %}
+  {% for post in latest %}
+    <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+  <p><a class="more-link" href="{{ '/cases/' | relative_url }}">케이스 전체 보기 →</a></p>
+</section>
+
+<section>
+  <h2>무엇이 다른가요?</h2>
+  <div class="services">
+    <a class="service" href="{{ '/method/' | relative_url }}"><h3>소개가 아니라 검증</h3><p>"이런 창업이 있다"에서 멈추지 않고, 시장이 실재하는지·이길 수 있는지·할 가치가 있는지를 관문(Gate) 방식으로 판정합니다</p></a>
+    <a class="service" href="{{ '/method/' | relative_url }}"><h3>숫자로 말하는 시장</h3><p>시장규모(TAM→SAM), 경쟁 지형, 수익 구조를 보수적 수치 기준으로 제시합니다</p></a>
+    <a class="service" href="{{ '/method/' | relative_url }}"><h3>한국 적용 판정</h3><p>모든 케이스는 "국내에서 창업한다면"에 대해 조건부 Go / Hold / 비추천 판정으로 끝납니다</p></a>
+  </div>
+</section>
+
+<section>
+  <h2>분석을 넘어, 실제 창업으로</h2>
+  <p>마음에 드는 모델을 발견하셨다면 다음 단계가 있습니다. 운영사 맥스컨설팅은
+  중소벤처기업부 등록 액셀러레이터로서 비즈니스모델 진단, IR 코칭, 투자유치 지원
+  프로그램을 운영합니다. <a href="https://maxconsulting.or.kr/startup/">스타트업 서비스 보기 →</a>
+  · 신청 가능한 정부 지원사업은 <a href="https://maxconsulting.or.kr/briefing/">지원사업 브리핑</a>에서
+  매일 업데이트됩니다.</p>
+</section>
