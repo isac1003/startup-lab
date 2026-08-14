@@ -39,15 +39,45 @@
   <div class="wrap">
     <a class="site-title" href="{{ '/' | relative_url }}"><img class="site-logo" src="{{ '/assets/logo-mark-white.png' | relative_url }}" alt="" width="32" height="36">{{ site.title }}</a>
     <nav aria-label="주 메뉴">
-      <a href="{{ '/cases/' | relative_url }}">케이스 분석</a>
-      <a href="{{ '/ideas/' | relative_url }}">아이디어 노트</a>
-      <a href="{{ '/method/' | relative_url }}">분석 방법론</a>
-      <a href="{{ site.company.main_site }}/startup/">창업 지원받기</a>
-      <a href="{{ site.company.main_site }}">맥스컨설팅</a>
-      <a class="nav-cta" href="{{ site.company.main_site }}/contact/">문의하기</a>
+      <span class="nav-item"><a href="https://maxconsulting.or.kr/services/">서비스 <span class="caret">▾</span></a>
+        <span class="dropdown">
+          <a href="https://maxconsulting.or.kr/services/sales/">매출 데이터 진단</a>
+          <a href="https://maxconsulting.or.kr/services/production/">생산·품질 데이터 진단</a>
+          <a href="https://maxconsulting.or.kr/services/evaluation/">경영진단·조사·평가</a>
+          <a href="https://maxconsulting.or.kr/services/export/">수출 시장전략</a>
+          <a href="https://maxconsulting.or.kr/services/rnd/">R&amp;D기획·기술사업화</a>
+          <a href="https://maxconsulting.or.kr/services/startup/">창업기업 성장·투자유치</a>
+          <span class="dd-sep"></span>
+          <a href="https://maxconsulting.or.kr/business/">기업을 위한 서비스</a>
+          <a href="https://maxconsulting.or.kr/startup/">스타트업을 위한 서비스</a>
+        </span>
+      </span>
+      <span class="nav-item"><a href="https://maxconsulting.or.kr/insights/">정보제공 <span class="caret">▾</span></a>
+        <span class="dropdown">
+          <a href="https://maxconsulting.or.kr/insights/">데이터로 보는 경영<span class="dd-note">경영·시장 데이터 해설</span></a>
+          <a href="https://maxconsulting.or.kr/briefing/">지원사업 브리핑<span class="dd-note">창업·중소기업 공고 정리</span></a>
+          <span class="dd-sep"></span>
+          <a href="https://startup.maxconsulting.or.kr">MAX 스타트업랩<span class="dd-note">해외 창업 케이스 심층분석</span></a>
+          <a href="https://ax.maxconsulting.or.kr">MAX AX랩<span class="dd-note">사업경영, AI로 날개 달다</span></a>
+        </span>
+      </span>
+      <span class="nav-item"><a href="https://maxconsulting.or.kr/about/">회사소개 <span class="caret">▾</span></a>
+        <span class="dropdown">
+          <a href="https://maxconsulting.or.kr/about/">회사소개</a>
+          <a href="https://maxconsulting.or.kr/history/">걸어온 길</a>
+          <a href="https://maxconsulting.or.kr/projects/">수행실적</a>
+          <a href="https://maxconsulting.or.kr/faq/">자주 묻는 질문</a>
+        </span>
+      </span>
+      <a class="nav-cta" href="https://maxconsulting.or.kr/contact/">문의하기</a>
     </nav>
   </div>
 </header>
+<div class="sub-nav"><div class="wrap">
+  <a href="{{ '/cases/' | relative_url }}">케이스 분석</a>
+  <a href="{{ '/ideas/' | relative_url }}">아이디어 노트</a>
+  <a href="{{ '/method/' | relative_url }}">분석 방법론</a>
+</div></div>
 <main class="wrap" id="main">
 {{ content }}
 </main>
@@ -70,6 +100,21 @@ document.querySelectorAll('main table').forEach(function(t){
 });
 document.querySelectorAll('a[href^="http"]').forEach(function(a){
   if (a.hostname !== location.hostname) { a.target = "_blank"; a.rel = "noopener"; }
+});
+
+document.querySelectorAll('.nav-item > a').forEach(function(a){
+  if (!a.parentElement.querySelector('.dropdown')) return;
+  a.addEventListener('click', function(e){
+    var item = a.parentElement;
+    if (!item.classList.contains('open')) {
+      e.preventDefault();
+      document.querySelectorAll('.nav-item.open').forEach(function(o){ o.classList.remove('open'); });
+      item.classList.add('open');
+    }
+  });
+});
+document.addEventListener('click', function(e){
+  if (!e.target.closest('.nav-item')) document.querySelectorAll('.nav-item.open').forEach(function(o){ o.classList.remove('open'); });
 });
 </script>
 </body>
